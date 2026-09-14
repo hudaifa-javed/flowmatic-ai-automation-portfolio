@@ -24,3 +24,18 @@ Each project below solves a genuine business problem using AI + no-code automati
 **Result:** Fully automated, tested end-to-end lead response system — reduces response time from hours to seconds, works even outside business hours.
 
 ---
+## Project 2: AI Customer Support Ticket Classifier
+
+**Problem:** Support teams waste time manually reading every customer ticket to figure out what it's about and how urgent it is — this delays response to critical issues.
+
+**Solution:** An automated system that receives a customer support message, uses AI to instantly classify it by category and priority level, and logs it in an organized format — so teams can act on urgent tickets first.
+
+**Tech Stack:** n8n, Google Gemini AI, Google Sheets
+
+**How it Works:**
+1. Customer support message comes in via Webhook
+2. Google Gemini AI analyzes the message and classifies it (category + priority)
+3. A Code node parses the AI's response into clean structured data
+4. Ticket details (customer name, email, message, category, priority) are saved to Google Sheets
+
+**Result:** Instant, consistent ticket triage — no more manual sorting, urgent issues get flagged automatically.
