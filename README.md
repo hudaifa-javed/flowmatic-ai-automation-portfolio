@@ -5,6 +5,8 @@ AI Automation projects built for real business use-cases
 Real, tested AI automation projects built for actual business use-cases. 
 Each project below solves a genuine business problem using AI + no-code automation tools.
 
+📄 Full case studies with business impact: [View on Notion](https://app.notion.com/p/Flowmatic-AI-Automation-Portfolio-3db68afcc5888009aee4d5b5cc4181aa?t=3db68afcc588807b95b300a95a2b0234)
+
 ---
 
 ## Project 1: AI-Powered WhatsApp Lead Bot
@@ -14,6 +16,8 @@ Each project below solves a genuine business problem using AI + no-code automati
 **Solution:** An automated pipeline that receives a customer's WhatsApp message, generates a smart AI-powered reply based on the business's tone/instructions, logs the lead, and sends the reply back — all within seconds, no human needed.
 
 **Tech Stack:** Make.com, Meta WhatsApp Business Cloud API, Google Gemini AI, Google Sheets
+
+![WhatsApp Lead Bot Workflow](whatsapp%20lead%20automation.png)
 
 **How it Works:**
 1. Customer sends a WhatsApp message → Webhook receives it
@@ -31,6 +35,8 @@ Each project below solves a genuine business problem using AI + no-code automati
 **Solution:** An automated system that receives a customer support message, uses AI to instantly classify it by category and priority level, and logs it in an organized format — so teams can act on urgent tickets first.
 
 **Tech Stack:** n8n, Google Gemini AI, Google Sheets
+
+![AI Ticket Classifier Workflow](AI%20ticket%20classifer%20automation.png)
 
 **How it Works:**
 1. Customer support message comes in via Webhook
