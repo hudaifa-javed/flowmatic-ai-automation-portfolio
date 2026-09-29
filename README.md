@@ -37,7 +37,7 @@ Each project below solves a genuine business problem using AI + no-code automati
 
 **Tech Stack:** Make.com, Meta WhatsApp Business Cloud API, Google Gemini AI, Google Sheets
 
-![WhatsApp Lead Bot Workflow](whatsapp%20lead%20automation.png)
+![WhatsApp Lead Bot Workflow](Whatsapp%20lead%20automation.png)
 
 **How it Works:**
 1. Customer sends a WhatsApp message → Webhook receives it
