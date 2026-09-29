@@ -17,7 +17,7 @@ Each project below solves a genuine business problem using AI + no-code automati
 
 **Tech Stack:** n8n, Google Gemini AI, Google Calendar API, Google Sheets
 
-![Clinic Appointment Assistant Workflow](clinic-appointment-assistant.png)
+![Clinic Appointment Assistant Workflow](Clinic-appointment-assistant.png)
 
 **How it Works:**
 1. Patient sends a message → AI understands the request
