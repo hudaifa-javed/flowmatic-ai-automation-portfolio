@@ -9,7 +9,27 @@ Each project below solves a genuine business problem using AI + no-code automati
 
 ---
 
-## Project 1: AI-Powered WhatsApp Lead Bot
+## Project 1: AI Clinic Appointment Assistant
+
+**Problem:** Clinics lose time and bookings to manual phone-call scheduling. Staff have to check the calendar, call the patient back, and log the appointment manually — slow and error-prone.
+
+**Solution:** A conversational AI agent that understands a patient's request, checks real-time doctor availability, confirms the time, books the appointment, and logs the record automatically — no human needed.
+
+**Tech Stack:** n8n, Google Gemini AI, Google Calendar API, Google Sheets
+
+![Clinic Appointment Assistant Workflow](clinic-appointment-assistant.png)
+
+**How it Works:**
+1. Patient sends a message → AI understands the request
+2. Assistant checks doctor availability on Google Calendar
+3. Confirms the time and patient details
+4. Books the appointment automatically
+5. Logs the booking (name, phone, time, status) to Google Sheets
+
+**Result:** Fully automated, tested end-to-end appointment booking system — verified working in both Google Calendar and Google Sheets.
+
+---
+## Project 2: AI-Powered WhatsApp Lead Bot
 
 **Problem:** Businesses lose leads because they can't reply to WhatsApp messages instantly, 24/7. Manual replies are slow and inconsistent.
 
@@ -28,7 +48,7 @@ Each project below solves a genuine business problem using AI + no-code automati
 **Result:** Fully automated, tested end-to-end lead response system — reduces response time from hours to seconds, works even outside business hours.
 
 ---
-## Project 2: AI Customer Support Ticket Classifier
+## Project 3: AI Customer Support Ticket Classifier
 
 **Problem:** Support teams waste time manually reading every customer ticket to figure out what it's about and how urgent it is — this delays response to critical issues.
 
