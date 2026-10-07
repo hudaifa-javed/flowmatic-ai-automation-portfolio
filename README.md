@@ -28,6 +28,29 @@ Each project below solves a genuine business problem using AI + no-code automati
 
 **Result:** Fully automated, tested end-to-end appointment booking system — verified working in both Google Calendar and Google Sheets.
 
+### Project 2: UrbanCart PK Support Bot (RAG)
+
+A customer support bot for an online clothing store that answers shipping, payment, return and order questions in Roman Urdu, Urdu and English, using only the store's own knowledge base.
+
+![UrbanCart Support Bot workflow](urbancart-support-bot.png)
+
+**How it works**
+- **Ingestion workflow (run once):** 14 FAQ chunks are embedded in a single batch call and the vectors are stored in Google Sheets.
+- **Chat workflow (every message):** the customer's question is embedded, ranked against the stored vectors with cosine similarity (JavaScript), and the top 3 chunks are passed to a Gemini agent as context.
+
+**Key decisions**
+- Embed documents once, not on every message, to save API quota and keep replies fast.
+- Vectors reduced to 768 dimensions so they fit inside a Google Sheets cell.
+- A grounded system prompt with separate handling for greetings, questions missing from the knowledge base (fallback with support contact) and off-topic questions.
+
+**Testing**
+- 15-question test set covering Roman Urdu, indirect questions, two questions in one message, missing-from-KB and off-topic cases: 15/15 passed on the baseline run.
+- Re-tested key cases after prompt changes to check for regressions.
+
+**Limitations and next step**
+Google Sheets works for a small knowledge base. For larger ones the plan is to move storage to a vector database (Pinecone).
+
+**Tech stack:** n8n, Google Gemini (embeddings and chat), Google Sheets, JavaScript
 ---
 ## Project 2: AI-Powered WhatsApp Lead Bot
 
