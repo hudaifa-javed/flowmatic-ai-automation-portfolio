@@ -51,8 +51,9 @@ A customer support bot for an online clothing store that answers shipping, payme
 Google Sheets works for a small knowledge base. For larger ones the plan is to move storage to a vector database (Pinecone).
 
 **Tech stack:** n8n, Google Gemini (embeddings and chat), Google Sheets, JavaScript
+
 ---
-## Project 2: AI-Powered WhatsApp Lead Bot
+## Project 3: AI-Powered WhatsApp Lead Bot
 
 **Problem:** Businesses lose leads because they can't reply to WhatsApp messages instantly, 24/7. Manual replies are slow and inconsistent.
 
@@ -71,7 +72,7 @@ Google Sheets works for a small knowledge base. For larger ones the plan is to m
 **Result:** Fully automated, tested end-to-end lead response system — reduces response time from hours to seconds, works even outside business hours.
 
 ---
-## Project 3: AI Customer Support Ticket Classifier
+## Project 4: AI Customer Support Ticket Classifier
 
 **Problem:** Support teams waste time manually reading every customer ticket to figure out what it's about and how urgent it is — this delays response to critical issues.
 
