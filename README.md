@@ -32,7 +32,7 @@ Each project below solves a genuine business problem using AI + no-code automati
 
 A customer support bot for an online clothing store that answers shipping, payment, return and order questions in Roman Urdu, Urdu and English, using only the store's own knowledge base.
 
-![UrbanCart Support Bot workflow](urbancart-support-bot.png)
+![UrbanCart Support Bot workflow](urbancart-support-bot.png.png)
 
 **How it works**
 - **Ingestion workflow (run once):** 14 FAQ chunks are embedded in a single batch call and the vectors are stored in Google Sheets.
