@@ -38,6 +38,8 @@ Each project below solves a genuine business problem using AI + no-code automati
 
 ![UrbanCart Support Agent v2 workflow](Urbancart-support-agent-v2.png)
 
+![UrbanCart MCP Server workflow](Urbancart-mcp-server.png)
+
 **How it works:**
 1. Customer asks a question in plain Roman Urdu or English
 2. The agent decides what is needed: a policy answer, an order check, or both
