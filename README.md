@@ -28,7 +28,24 @@ Each project below solves a genuine business problem using AI + no-code automati
 
 **Result:** Fully automated, tested end-to-end appointment booking system — verified working in both Google Calendar and Google Sheets.
 
-### Project 2: UrbanCart PK Support Bot (RAG)
+## Project 2: UrbanCart Support Agent v2 (RAG + AI Agent + MCP)
+
+**Problem:** Online stores get the same customer questions all day (delivery, returns, order status) and answering them manually is slow. Order lookups also risk exposing customer data.
+
+**Solution:** An AI support agent that answers policy questions from the store's own knowledge base and checks order status for verified customers, while keeping private customer data out of the AI's reach.
+
+**Tech Stack:** n8n, Google Gemini, Pinecone (vector database), Model Context Protocol (MCP), Google Sheets
+
+**How it works:**
+1. Customer asks a question in plain Roman Urdu or English
+2. The agent decides what is needed: a policy answer, an order check, or both
+3. Policy questions are answered from the store's own documents
+4. Order questions are answered only after the customer's details are verified
+5. Wrong or missing details get a polite request to re-check, never a guess
+
+**Result:** A demo support agent (built for a sample store) that handles mixed questions in a single reply, refuses off-topic requests, and never shares customer names.
+
+### Project 3: UrbanCart PK Support Bot (RAG)
 
 A customer support bot for an online clothing store that answers shipping, payment, return and order questions in Roman Urdu, Urdu and English, using only the store's own knowledge base.
 
@@ -53,7 +70,7 @@ Google Sheets works for a small knowledge base. For larger ones the plan is to m
 **Tech stack:** n8n, Google Gemini (embeddings and chat), Google Sheets, JavaScript
 
 ---
-## Project 3: AI-Powered WhatsApp Lead Bot
+## Project 4: AI-Powered WhatsApp Lead Bot
 
 **Problem:** Businesses lose leads because they can't reply to WhatsApp messages instantly, 24/7. Manual replies are slow and inconsistent.
 
@@ -72,7 +89,7 @@ Google Sheets works for a small knowledge base. For larger ones the plan is to m
 **Result:** Fully automated, tested end-to-end lead response system — reduces response time from hours to seconds, works even outside business hours.
 
 ---
-## Project 4: AI Customer Support Ticket Classifier
+## Project 5: AI Customer Support Ticket Classifier
 
 **Problem:** Support teams waste time manually reading every customer ticket to figure out what it's about and how urgent it is — this delays response to critical issues.
 
