@@ -36,7 +36,7 @@ Each project below solves a genuine business problem using AI + no-code automati
 
 **Tech Stack:** n8n, Google Gemini, Pinecone (vector database), Model Context Protocol (MCP), Google Sheets
 
-![UrbanCart Support Agent v2 workflow](urbancart-support-agent-v2.png)
+![UrbanCart Support Agent v2 workflow](Urbancart-support-agent-v2.png)
 
 **How it works:**
 1. Customer asks a question in plain Roman Urdu or English
