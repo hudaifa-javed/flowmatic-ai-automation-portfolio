@@ -43,7 +43,7 @@ Each project below solves a genuine business problem using AI + no-code automati
 4. Order questions are answered only after the customer's details are verified
 5. Wrong or missing details get a polite request to re-check, never a guess
 
-**Result:** A demo support agent (built for a sample store) that handles mixed questions in a single reply, refuses off-topic requests, and never shares customer names.
+**Result:** A support agent built for online stores that answers policy and order questions in a single reply, in Roman Urdu or English. It keeps customer data private and can be customized for any store's products and policies.
 
 ### Project 3: UrbanCart PK Support Bot (RAG)
 
