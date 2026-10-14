@@ -40,11 +40,13 @@ Each project below solves a genuine business problem using AI + no-code automati
 
 ![UrbanCart MCP Server workflow](Urbancart-mcp-server.png)
 
+*The customer-facing agent (first image) connects to a separate tool server (second image) that handles store data and order lookups.*
+
 **How it works:**
 1. Customer asks a question in plain Roman Urdu or English
 2. The agent decides what is needed: a policy answer, an order check, or both
 3. Policy questions are answered from the store's own documents
-4. Order questions are answered only after the customer's details are verified
+4. Order questions go through a dedicated tool server, so the agent only sees the information it needs
 5. Wrong or missing details get a polite request to re-check, never a guess
 
 **Result:** A support agent built for online stores that answers policy and order questions in a single reply, in Roman Urdu or English. It keeps customer data private and can be customized for any store's products and policies.
