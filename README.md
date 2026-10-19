@@ -28,7 +28,29 @@ Each project below solves a genuine business problem using AI + no-code automati
 
 **Result:** Fully automated, tested end-to-end appointment booking system — verified working in both Google Calendar and Google Sheets.
 
-## Project 2: UrbanCart Support Agent v2 (RAG + AI Agent + MCP)
+## Project 2: Solar Lead Follow-up & Reporting System
+
+**Problem**
+Solar companies generate leads from multiple channels, such as Facebook, Instagram, TikTok, Google Ads and website forms. Leads are slow to receive a response, follow-ups get forgotten, and the owner has no clear weekly view of how many leads actually engaged.
+
+**Solution**
+A source-independent lead management system built on n8n. Any channel that can send lead data to a webhook feeds one pipeline: instant WhatsApp response, AI lead qualification, automatic follow-up, reply tracking, and a weekly performance report for the business owner.
+
+**Tech Stack**
+n8n, Gemini API, Google Sheets, WhatsApp Cloud API, Gmail
+
+**How It Works**
+1. **Lead Intake:** each new lead is normalized (phone format), classified by AI as serious, normal or cold, stored in Google Sheets, and sent a WhatsApp message.
+2. **Automated Follow-up:** an hourly check finds leads with no reply after 24 hours and sends exactly one follow-up.
+3. **Reply Tracking:** a reply updates the lead status and records the time of the first reply. Repeat replies never overwrite it, and messages from unknown numbers are logged in a separate tab instead of being lost.
+4. **Weekly Report:** every Sunday the owner receives an email with total leads, quality breakdown, reply rate, follow-ups sent, average first-response time, and serious leads still waiting for a reply.
+
+**Result**
+- First WhatsApp response goes out within seconds of a lead arriving
+- One message per lead, with no duplicate follow-ups
+- Reports are calculated by code rather than AI, so the numbers are exact
+
+## Project 3: UrbanCart Support Agent v2 (RAG + AI Agent + MCP)
 
 **Problem:** Online stores get the same customer questions all day (delivery, returns, order status) and answering them manually is slow. Order lookups also risk exposing customer data.
 
@@ -52,7 +74,7 @@ Each project below solves a genuine business problem using AI + no-code automati
 **Result:** A support agent built for online stores that answers policy and order questions in a single reply, in Roman Urdu or English. It keeps customer data private and can be customized for any store's products and policies.
 
 ---
-## Project 3: AI-Powered WhatsApp Lead Bot
+## Project 4: AI-Powered WhatsApp Lead Bot
 
 **Problem:** Businesses lose leads because they can't reply to WhatsApp messages instantly, 24/7. Manual replies are slow and inconsistent.
 
@@ -71,7 +93,7 @@ Each project below solves a genuine business problem using AI + no-code automati
 **Result:** Fully automated, tested end-to-end lead response system — reduces response time from hours to seconds, works even outside business hours.
 
 ---
-## Project 4: AI Customer Support Ticket Classifier
+## Project 5: AI Customer Support Ticket Classifier
 
 **Problem:** Support teams waste time manually reading every customer ticket to figure out what it's about and how urgent it is — this delays response to critical issues.
 
