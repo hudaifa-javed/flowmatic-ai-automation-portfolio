@@ -39,6 +39,10 @@ A source-independent lead management system built on n8n. Any channel that can s
 **Tech Stack**
 n8n, Gemini API, Google Sheets, WhatsApp Cloud API, Gmail
 
+![Solar Lead Intake workflow](Solar-lead-intake.png)
+![Solar Reply Tracker workflow](Solar-reply-tracker.png)
+![Solar Weekly Report workflow](Solar-weekly-report.png)
+
 **How It Works**
 1. **Lead Intake:** each new lead is normalized (phone format), classified by AI as serious, normal or cold, stored in Google Sheets, and sent a WhatsApp message.
 2. **Automated Follow-up:** an hourly check finds leads with no reply after 24 hours and sends exactly one follow-up.
