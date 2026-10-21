@@ -9,7 +9,7 @@ Each project below solves a genuine business problem using AI + no-code automati
 
 ---
 
-### Project 1: Invoice Generator
+## Project 1: Invoice Generator
 
 **What it does:** Creates and emails a professional PDF invoice automatically from a single row in Google Sheets.
 
