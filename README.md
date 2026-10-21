@@ -23,13 +23,10 @@ Each project below solves a genuine business problem using AI + no-code automati
 ![Invoice Email](Invoice-generator-email.png)
 
 **How it works**
-1. Every 5 minutes, the system checks the sheet for new rows without a status.
-2. A row with a missing email is marked "Error" with the reason.
-3. The total, discount and tax are calculated, and a unique invoice number is created.
-4. A copy of the invoice template is filled with the customer's details.
-5. If any part of the template could not be filled, the invoice is stopped and flagged.
-6. Otherwise the copy is converted to PDF and emailed to the customer.
-7. The row is marked "Sent", so the same invoice is never sent twice.
+1. A new row is added to the spreadsheet.
+2. The system calculates the total and creates the invoice PDF.
+3. The invoice is emailed to the customer.
+4. The row is marked as Sent.
 
 **Key features**
 - Unique, sequential invoice numbers (INV-2026-0001)
