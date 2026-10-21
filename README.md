@@ -9,7 +9,40 @@ Each project below solves a genuine business problem using AI + no-code automati
 
 ---
 
-## Project 1: AI Clinic Appointment Assistant
+### Project 1: Invoice Generator
+
+**What it does:** Creates and emails a professional PDF invoice automatically from a single row in Google Sheets.
+
+**The problem:** Small businesses often write each invoice by hand, calculate totals manually and email it themselves. This is slow and easy to get wrong.
+
+**The solution:** The business adds one row with the customer details. The system calculates the total, assigns a unique invoice number, creates the PDF from a branded template, emails it to the customer and marks the row as Sent.
+
+![Invoice Generator Workflow](Invoice-generator-workflow.png)
+![Invoice Generator Sheet](Invoice-generator-sheet.png)
+![Invoice PDF](Invoice-generator-pdf.png)
+![Invoice Email](Invoice-generator-email.png)
+
+**How it works**
+1. Every 5 minutes, the system checks the sheet for new rows without a status.
+2. A row with a missing email is marked "Error" with the reason.
+3. The total, discount and tax are calculated, and a unique invoice number is created.
+4. A copy of the invoice template is filled with the customer's details.
+5. If any part of the template could not be filled, the invoice is stopped and flagged.
+6. Otherwise the copy is converted to PDF and emailed to the customer.
+7. The row is marked "Sent", so the same invoice is never sent twice.
+
+**Key features**
+- Unique, sequential invoice numbers (INV-2026-0001)
+- Total, discount and tax calculated automatically
+- Never sends the same invoice twice
+- Rows with a missing email are flagged "Error" with a reason
+- Stops if the template is damaged, instead of sending a wrong invoice
+- Retries automatically on temporary network failures
+- Checks for new rows every 5 minutes
+
+**Tech stack:** n8n, Google Sheets, Google Docs, Google Drive, Gmail
+
+## Project 2: AI Clinic Appointment Assistant
 
 **Problem:** Clinics lose time and bookings to manual phone-call scheduling. Staff have to check the calendar, call the patient back, and log the appointment manually — slow and error-prone.
 
@@ -28,7 +61,7 @@ Each project below solves a genuine business problem using AI + no-code automati
 
 **Result:** Fully automated, tested end-to-end appointment booking system — verified working in both Google Calendar and Google Sheets.
 
-## Project 2: Solar Lead Follow-up & Reporting System
+## Project 3: Solar Lead Follow-up & Reporting System
 
 **Problem**
 Solar companies generate leads from multiple channels, such as Facebook, Instagram, TikTok, Google Ads and website forms. Leads are slow to receive a response, follow-ups get forgotten, and the owner has no clear weekly view of how many leads actually engaged.
@@ -54,7 +87,7 @@ n8n, Gemini API, Google Sheets, WhatsApp Cloud API, Gmail
 - One message per lead, with no duplicate follow-ups
 - Reports are calculated by code rather than AI, so the numbers are exact
 
-## Project 3: UrbanCart Support Agent v2 (RAG + AI Agent + MCP)
+## Project 4: UrbanCart Support Agent v2 (RAG + AI Agent + MCP)
 
 **Problem:** Online stores get the same customer questions all day (delivery, returns, order status) and answering them manually is slow. Order lookups also risk exposing customer data.
 
@@ -78,7 +111,7 @@ n8n, Gemini API, Google Sheets, WhatsApp Cloud API, Gmail
 **Result:** A support agent built for online stores that answers policy and order questions in a single reply, in Roman Urdu or English. It keeps customer data private and can be customized for any store's products and policies.
 
 ---
-## Project 4: AI-Powered WhatsApp Lead Bot
+## Project 5: AI-Powered WhatsApp Lead Bot
 
 **Problem:** Businesses lose leads because they can't reply to WhatsApp messages instantly, 24/7. Manual replies are slow and inconsistent.
 
@@ -97,7 +130,7 @@ n8n, Gemini API, Google Sheets, WhatsApp Cloud API, Gmail
 **Result:** Fully automated, tested end-to-end lead response system — reduces response time from hours to seconds, works even outside business hours.
 
 ---
-## Project 5: AI Customer Support Ticket Classifier
+## Project 6: AI Customer Support Ticket Classifier
 
 **Problem:** Support teams waste time manually reading every customer ticket to figure out what it's about and how urgent it is — this delays response to critical issues.
 
