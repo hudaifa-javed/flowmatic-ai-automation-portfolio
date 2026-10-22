@@ -18,9 +18,8 @@ Each project below solves a genuine business problem using AI + no-code automati
 **The solution:** The business adds one row with the customer details. The system calculates the total, assigns a unique invoice number, creates the PDF from a branded template, emails it to the customer and marks the row as Sent.
 
 ![Invoice Generator Workflow](Invoice-generator-workflow.png)
+![Invoice PDF and Email](Invoice-generator-pdf-email.png)
 ![Invoice Generator Sheet](Invoice-generator-sheet.png)
-![Invoice PDF](Invoice-generator-pdf.png)
-![Invoice Email](Invoice-generator-email.png)
 
 **How it works**
 1. A new row is added to the spreadsheet.
