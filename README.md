@@ -57,7 +57,32 @@ Each project below solves a genuine business problem using AI + no-code automati
 
 **Result:** Fully automated, tested end-to-end appointment booking system — verified working in both Google Calendar and Google Sheets.
 
-## Project 3: Solar Lead Follow-up & Reporting System
+## 📊 Project 3: CRM Automation & Sales Dashboard
+
+### The Problem
+Leads get typed in by hand, duplicates creep in, quiet deals are forgotten, and the owner has no clear view of the pipeline.
+
+### The Solution
+A sales system that runs in the background: it captures leads, alerts the owner about stalled deals, and shows the whole pipeline on a live dashboard.
+
+### Key Features
+- **Automatic lead capture:** every lead enters the CRM clean and ready
+- **Duplicate protection:** repeat enquiries update the existing deal
+- **Daily stale-deal alert:** a morning email lists deals with no contact for 3+ days
+- **Live sales dashboard:** won revenue, open pipeline, win rate, stages and sources
+
+### Tech Stack
+n8n • Google Sheets • Gmail • Looker Studio
+
+![CRM Workflows](crm-workflows.png)
+![CRM Dashboard](crm-dashboard.png)
+![Alert Email](crm-alert-email.png)
+
+### Result
+Built and tested end to end with sample data. Ready to connect to a client's own lead sources.
+
+
+## Project 4: Solar Lead Follow-up & Reporting System
 
 **Problem**
 Solar companies generate leads from multiple channels, such as Facebook, Instagram, TikTok, Google Ads and website forms. Leads are slow to receive a response, follow-ups get forgotten, and the owner has no clear weekly view of how many leads actually engaged.
@@ -83,7 +108,7 @@ n8n, Gemini API, Google Sheets, WhatsApp Cloud API, Gmail
 - One message per lead, with no duplicate follow-ups
 - Reports are calculated by code rather than AI, so the numbers are exact
 
-## Project 4: UrbanCart Support Agent v2 (RAG + AI Agent + MCP)
+## Project 5: UrbanCart Support Agent v2 (RAG + AI Agent + MCP)
 
 **Problem:** Online stores get the same customer questions all day (delivery, returns, order status) and answering them manually is slow. Order lookups also risk exposing customer data.
 
@@ -107,7 +132,7 @@ n8n, Gemini API, Google Sheets, WhatsApp Cloud API, Gmail
 **Result:** A support agent built for online stores that answers policy and order questions in a single reply, in Roman Urdu or English. It keeps customer data private and can be customized for any store's products and policies.
 
 ---
-## Project 5: AI-Powered WhatsApp Lead Bot
+## Project 6: AI-Powered WhatsApp Lead Bot
 
 **Problem:** Businesses lose leads because they can't reply to WhatsApp messages instantly, 24/7. Manual replies are slow and inconsistent.
 
@@ -126,7 +151,7 @@ n8n, Gemini API, Google Sheets, WhatsApp Cloud API, Gmail
 **Result:** Fully automated, tested end-to-end lead response system — reduces response time from hours to seconds, works even outside business hours.
 
 ---
-## Project 6: AI Customer Support Ticket Classifier
+## Project 7: AI Customer Support Ticket Classifier
 
 **Problem:** Support teams waste time manually reading every customer ticket to figure out what it's about and how urgent it is — this delays response to critical issues.
 
